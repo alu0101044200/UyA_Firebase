@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Firebase Cliente Web</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAnQrtddub3m-Iogt1gI9aXUOImIBfZPEI",
+    authDomain: "uyaproyecto-2dbe9.firebaseapp.com",
+    databaseURL: "https://uyaproyecto-2dbe9.firebaseio.com",
+    projectId: "uyaproyecto-2dbe9",
+    storageBucket: "uyaproyecto-2dbe9.appspot.com",
+    messagingSenderId: "754046813172"
+  };
+  firebase.initializeApp(config);
+
+  //Referencia a la base de datos
+  var database = firebase.database(); 
+  var referencia = database.ref('usu2');
+  //Escribir un documento
+  referencia.set({
+        nombre: 'Gabriel García Márquez',
+        contraseña: 1981,
+        email: 'Crónica@gmail.com'
+    });
+   
+</script>
+</head>
+<body>
+    <h1>Test con Firebase</h1>    
+    <p id="infoFire"> </p>
+
+    <form id="formulariologin" alt="formulario para logearse">
+        <fieldset></fieldset>
+            <label for="Email" alt="Login con Email">  Email:  </label>
+            <input type="email" id="email">
+                
+            <label for="contraseña" >Constraseña: </label> 
+            <input type="password" id="contraseña">
+
+            <label for="nombre" >Nombre: </label>
+            <input type="nombre" id="nombre">
+
+            <input type="submit" id="sumbit" value="Iniciar">
+      </fieldset>
+      </form>
+
+      <script src="form.js"></script>
+</body>
+</html>

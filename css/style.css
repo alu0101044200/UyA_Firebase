@@ -1,0 +1,67 @@
+
+
+p {
+  line-height: 2rem;
+  color: black;
+}
+
+label{
+  color: black;
+  font-size: 150%;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 55px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.alert_correcto {
+  text-align: center;
+  padding: 0.625em;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 0.625em;
+  display: none;
+}
+
+.alert_nombre {
+  text-align: center;
+  padding: 0.625em;
+  background: #d34420;
+  color: #fff;
+  margin-bottom: 0.625em;
+  display: none;
+}
+
+.alert_apellido {
+  text-align: center;
+  padding: 0.625em;
+  background: #d34420;
+  color: #fff;
+  margin-bottom: 0.625em;
+  display: none;
+}
+
+.alert_email {
+  text-align: center;
+  padding: 0.625em;
+  background: #d34420;
+  color: #fff;
+  margin-bottom: 0.625em;
+  display: none;
+}
+
+.alert_comentario {
+  text-align: center;
+  padding: 0.625em;
+  background: #d34420;
+  color: #fff;
+  margin-bottom: 0.625em;
+  display: none;
+}
+
+
